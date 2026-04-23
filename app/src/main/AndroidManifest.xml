@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_app_005_personal_bucket_list">
         <activity
+            android:name=".PlacesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GoalsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
