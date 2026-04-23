@@ -19,14 +19,16 @@ public class PlacesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_places);
-        RecyclerView recyclerViewGoals;
-        recyclerViewGoals = findViewById(R.id.recycler_view_goals);
+        RecyclerView recyclerViewPlaces;
+        recyclerViewPlaces = findViewById(R.id.recycler_view_places);
 
         ActionObject[] actionObjects = {
-                new ActionObject("", 5,"")
+                new ActionObject("German pipe organ", R.drawable.pipe_organ,"In St. Stephen's Cathedral in Passau, Bavaria, Germany, the largest pipe organ"),
+                new ActionObject("Japan", R.drawable.japan,"Travel around Japan"),
+                new ActionObject("Peaceful places", R.drawable.quite_place,"Just go sometimes somewhere far away from big cities")
         };
 
         ActionAdapter adapter = new ActionAdapter(actionObjects);
-        recyclerViewGoals.setAdapter(adapter);
+        recyclerViewPlaces.setAdapter(adapter);
     }
 }
