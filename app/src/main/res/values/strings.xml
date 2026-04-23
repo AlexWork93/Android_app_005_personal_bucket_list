@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android_app_005_personal_bucket_list</string>
+    <string name="goals_to_do">Goals to do</string>
+    <string name="places_to_go">Places to go</string>
+</resources>
